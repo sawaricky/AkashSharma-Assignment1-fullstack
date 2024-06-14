@@ -1,0 +1,24 @@
+extends commons/layout
+
+block layout-content
+  div.container
+    //- displaying information in cards
+    h1.mt-5.text-center.place-title #{title}
+    p.add-text Add thrilling events to the lineup! Share memorable experiences and engage the Toronto people with the latest happenings on our website.
+    a(href="/admin/menu/add" class="btn introduction-button mb-3") Add Place
+  
+    each place in menu
+      div.card.mb-3.card-custom.menu-place
+        div.card-body
+          h5.card-title #{place.eName}
+          p.card-text Event Venue: #{place.eVenue}
+
+          div.d-flex.justify-content-between  
+            form(action="/admin/menu/edit")
+                input(type="hidden" name="placeId" value=place._id)
+                button.btn.btn-secondary(type="submit") Edit
+
+            form(action="/admin/menu/delete")
+                input(type="hidden" name="placeId" value=place._id)
+                button.btn.btn-danger(type="submit") Delete
+

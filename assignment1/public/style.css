@@ -1,0 +1,297 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  /* nav bar  */
+  .container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #navbar-container {
+    color:#f9f9f9;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .navbar-nav {
+    justify-content: flex-end;
+    color:#f9f9f9;
+  }
+  
+  .navbar-nav .nav-item {
+    color:#f9f9f9;
+    margin-left: 20px; 
+  }
+  .navbar-nav .nav-link {
+    color: #ffffff !important; /* Set the color to white */
+  }
+  .navbar {  
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #00b300, #b30068, #7731d8);
+  }
+  
+  #navbarNav .navbar-nav .nav-item:first-child {
+    margin-left: 0;
+    color:#f9f9f9;
+  }
+  .logo {
+    max-width: 50px;
+  }
+
+  .menu-place{
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .visit-place{
+    max-width: 1300px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  .card-custom {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.card-body, label, input{
+  max-width: 900px;
+  width: 100%;
+}
+
+  .introduction-container {
+    max-width: 1300px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #b00c92;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+
+  /* Introduction Descriptor */
+  .intro-descriptor {
+    font-size: 16px;
+    line-height: 1.6;
+    flex: 0 0 70%;
+  }
+  .intro-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+/* CNTower Image */
+.CNTower-image {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 20px;
+
+  }
+  .CNTower-image img {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-width: 100%;
+    height: auto; 
+  }
+  
+/* Introduction Button */
+.introduction-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #b00c92;;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+/* Featured Place to Visit Container */
+.featured-place-to-visit-container {
+  max-width: 1300px;
+  margin: 40px auto;
+}
+  
+/* Featured Place Title */
+.secondary-title {
+  font-size: 24px;
+  color: #333;
+}
+.places-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* Places Details */
+.places-details {
+  max-width: 1300px;
+  margin-top: 20px;
+}
+
+/* Places Content */
+.places-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Places Image */
+.places-image {
+  flex: 0 0 48%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.places-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Places Description */
+.places-description {
+  flex: 0 0 48%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 0 20px 0 20px;
+  
+}
+.places-content button{
+  margin-bottom: 20px;
+}
+
+/* Read More Link */
+.places-description a {
+  color: #b00c92;;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.places-description a:hover {
+  text-decoration: underline;
+  
+}
+/* .container a:hover {
+  background-color: #333;
+  color: white;
+} */
+button:hover{
+  background-color: #333;
+  color: white;
+}
+
+  /* Media Queries */
+  @media screen and (max-width: 948px) {
+    .introduction-container,
+    .featured-place-to-visit-container,
+    .places-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .intro-descriptor,
+    .CNTower-image,
+    .places-image,
+    .places-description {
+      flex: 0 0 100%;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .intro-descriptor,
+    .CNTower-image,
+    .places-image,
+    .places-description {
+      flex: 0 0 100%;
+    }
+  }
+.place-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #b00c92;
+}
+.place-name{
+  text-align: justify;
+  font-size: 16px;
+  font-weight: bold;
+  color: #b00c92;
+  line-height: 1.6;
+  margin-bottom: 20px;
+
+}
+
+.event-info{
+  text-align: justify;
+  font-size: 16px;
+  color: #b00c92;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #b00c92;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.add-text{
+  text-align: justify;
+  max-width: 900px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  display: flex;
+}
+label{
+  font-size: 16px;
+  color: #b00c92;
+  font-weight: bold;
+}
+footer {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 40px;}

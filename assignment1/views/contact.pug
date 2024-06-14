@@ -1,0 +1,26 @@
+extends commons/layout
+
+block layout-content 
+    div.container
+        h1.mt-5.text-center.place-title #{title}
+        p "Have questions or suggestions? Reach out to us! Our team is here to assist you with anything related to Toronto's exciting activities. Let's make your experience unforgettable!"
+        div.d-flex.justify-content-center
+            div.card.card-custom
+                div.card-body
+                    form(method="post")
+                        div.form-group
+                            label(for="eventName")
+                              | Full Name
+                              span.text-danger *
+                            input.form-control(type="text", placeholder="John Cappy", required)
+                        div.form-group 
+                            label(for="eventVenue") 
+                              | Email:
+                              span.text-danger *
+                            input.form-control(type="text", placeholder="xyz@company.com", required)
+                        div.form-group 
+                            label(for="eventDate") 
+                              | Message:
+                              span.text-danger *
+                            input.form-control(type="text",  required)
+                        button.introduction-button.menu-place(type="submit") Submit

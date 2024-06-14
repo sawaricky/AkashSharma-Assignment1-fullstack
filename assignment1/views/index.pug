@@ -1,0 +1,33 @@
+extends commons/layout
+
+block layout-content
+
+  //- start of introduction container
+  section.introduction-container
+    article.Information
+      h1 Welcome to Toronto: Your Ultimate Guide to the Best Places to Visit
+      div.CNTower-image
+        //- https://images.dailyhive.com/20200129173807/toronto-morning-skyline.jpg
+        img(src="/images/cntower.jpg", alt="Cntower-image")
+      p.intro-descriptor
+        | Toronto, the capital city of Ontario, is a bustling metropolis known for its diverse culture, vibrant neighborhoods, and iconic landmarks. Whether you're a local or a tourist, there's always something new and exciting to discover in this dynamic city. Explore our curated list of must-visit places in Toronto to make the most of your visit.
+        | Description: Standing at 553 meters, the CN Tower is Toronto's most iconic landmark offering breathtaking views of the city. Highlights: EdgeWalk, Glass Floor, 360 Restaurant. Location: 290 Bremner Blvd, Toronto, ON M5V 3L9.
+      div.intro-img      
+        button.introduction-button About Toronto
+  //- end introduction container
+
+  //- start featured-places-container
+  section.featured-place-to-visit-container
+    h2.secondary-title Featured place to visit
+    div.places-details
+      article.places
+        h1.text-center.place-title Ripley's Aquarium of Canada
+        div.places-content
+          div.places-image
+            //- https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.planetblueadventure.com%2Fripleys-aquarium-of-canada-tips-for-visiting%2F&psig=AOvVaw1r7UifYlytrlLxc9HVRDNA&ust=1718486234824000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNCTkKGC3IYDFQAAAAAdAAAAABAE
+            img(src="/images/fish.jpg", alt="featured-place-aquarium -image")
+            a(href="/visit" class="btn introduction-button mb-3") Discover more events
+          div.places-description
+            p Discover the wonders of Ripley's Aquarium of Canada with our exhilarating website, your gateway to the captivating world beneath the waves. Dive into a virtual oceanic adventure as you explore detailed information about our iconic exhibits, from the thrilling Dangerous Lagoon to the vibrant Rainbow Reef. Delve into interactive features, behind-the-scenes insights, and upcoming events, ensuring you're always in the know about the latest marine marvels. Whether you're planning your visit or simply seeking a digital dive into marine magic, our website promises an immersive experience that's as thrilling as stepping through our doors. 
+                a(href="#") Read More
+  //- end featured-places-container

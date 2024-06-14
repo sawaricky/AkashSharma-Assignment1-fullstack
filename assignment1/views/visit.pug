@@ -1,0 +1,14 @@
+extends commons/layout
+
+block layout-content
+  div.container
+    div.visit-place.d-flex.justify-content-center
+      div.place-title #{title}
+      each place in menu
+        div.card.mb-3.card-custom
+          div.card-body
+            h5.card-title.place-name #{place.eName}
+            div.border-bottom.mb-3
+            div.card-text              
+              p.card-text #{place.eVenue}
+              p.card-text.event-info Event Date #{place.eDate}

@@ -1,0 +1,27 @@
+extends commons/layout
+
+block layout-content 
+    .container
+        //- adding information through cards
+        h1.mt-5.text-center.place-title #{title}
+        div.d-flex.justify-content-center
+            div.card.card-custom
+                div.card-body
+                    //- form to add data
+                    form(method="post", action="/admin/menu/add/submit")
+                        div.form-group
+                            label(for="eventName")
+                              | Event Name:
+                              span.text-danger *
+                            input.form-control(type="text", id="eventName", name="eName", placeholder="Toronto Christmas Market", required)
+                        div.form-group 
+                            label(for="eventVenue")
+                              |  Event Venue:
+                              span.text-danger *
+                            textarea.form-control(id="eventVenue", name="eVenue", placeholder="Venue: Toronto island and an exciting description on it", required)
+                        div.form-group 
+                            label(for="eventDate")  
+                              | Event Date:
+                              span.text-danger * 
+                            input.form-control(type="date", id="eventDate", name="eDate", required)
+                        button.introduction-button(type="submit") Add Event

@@ -1,0 +1,22 @@
+extends commons/layout 
+//- menu edit calls the app.post for edit in the index.js file
+block layout-content
+    .container
+        //- Editing information in cards
+        h1.mt-5.text-center.place-title #{title}
+        div.d-flex.justify-content-center
+            div.card.card-custom
+                div.card-body
+                    //- form to edit data
+                    form(method="post", action="/admin/menu/edit/submit")
+                        input(type="hidden", name="placeId", value=editPlace._id)
+                        div.form-group     
+                            label(for="eventName") Event Name: 
+                            input.form-control(type="text", id="eventName", value=editPlace.eName, name="eName")
+                        div.form-group 
+                            label(for="eventVenue") Event Venue: 
+                            textarea.form-control(id="eventVenue", name="eVenue", placeholder="Toronto island") #{editPlace.eVenue}
+                        div.form-group 
+                            label(for="eventDate") Event Date : 
+                            input.form-control(type="date", id="eventDate", value=editPlace.eDate, name="eDate")
+                        button.introduction-button(type="submit") Edit Event

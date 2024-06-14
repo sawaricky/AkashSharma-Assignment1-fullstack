@@ -1,0 +1,20 @@
+header#header
+  h2#site-name
+    a(href="/") Toronto Places Site
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
+    div.container
+      a.navbar-brand(href="/")
+        //- https://www.google.com/url?sa=i&url=https%3A%2F%2Fcustomcreate.ca%2Fproducts%2Fcanada-maple-leaf&psig=AOvVaw09NrfFzJNtxE6tMBzFZCqb&ust=1718486151851000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDKzfeB3IYDFQAAAAAdAAAAABAE
+        img.logo(src="/images/logo.png", alt="Maple Logo")
+      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon 
+      div.collapse.navbar-collapse#navbarNav 
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='/') Home
+          li.nav-item
+            a.nav-link(href='/contact') Contact
+          li.nav-item
+            a.nav-link(href='/visit') Visit
+          li.nav-item
+            a.nav-link(href='/admin/menu') Admin pages
